@@ -1,0 +1,20 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = __importDefault(require("express"));
+const slotEngine_1 = __importDefault(require("./slotEngine"));
+const reservation_1 = __importDefault(require("./reservation"));
+const app = (0, express_1.default)();
+app.use(express_1.default.json());
+const port = process.env.PORT || 3000;
+app.get("/health", (_req, res) => {
+    res.json({ status: "ok" });
+});
+app.post("/reserve", slotEngine_1.default, reservation_1.default);
+app.listen(port, () => {
+    console.log(`SnapPick listening on port ${port}`);
+});
+exports.default = app;
+//# sourceMappingURL=index.js.map

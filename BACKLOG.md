@@ -1,8 +1,6 @@
 # Backlog
 
-<!-- IDEA: Replace this line with a one-line summary of what this product is
-(e.g. "A habit tracker with streak reminders"). The README.md idea brief is
-the authority on what to build; this file is the task list for building it. -->
+# SnapPick – One-tap Grocery Pickup Scheduling
 
 Tasks are worked top-down by the build agent, one per turn where possible.
 Update the sections every turn: move finished items to Done, hold the item

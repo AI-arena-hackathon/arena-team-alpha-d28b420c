@@ -1,0 +1,6 @@
+=== Build verification FAILED — turn openrouter-verify-002 ===
+Reported 2026-10-15T14:40:05Z
+This file is committed by the commit step so the next
+turn can see what broke. Fix the checks below, then rebuild.
+
+dependency install failed (install phase exit code 1) — see the Phase B install step log; build checks skipped
