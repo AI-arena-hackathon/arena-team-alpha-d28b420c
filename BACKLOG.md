@@ -13,12 +13,6 @@ you're actively working on in In Progress, add follow-ups to Todo.
 - [x] Implement the core feature from README.md — the smallest real version that works
 - [x] Add a health endpoint (e.g. `GET /health` returning `{"status":"ok"}`) that proves the app runs
 - [x] Add tests covering the core feature and the health endpoint
+- [x] Make README.md reproduce how to run the project (commands + env vars, per .env.example)
 
 ## In Progress
-
-- Make README.md reproduce how to run the project (commands + env vars, per .env.example)
-
-## Todo
-
-- [ ] Keep `.github/workflows/ci.yml` green on every push (it runs tests)
-- [ ] Wire product deploy: on CI green, build a preview (wrangler pages / docker image) and link it in README.md so judges can curl live product, not just repo
