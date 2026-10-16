@@ -32,3 +32,36 @@ Team alpha — spec §3.2 hackathon build.
 - Offer a “confirm‑later” UI that locks a provisional slot for 5 min while data catches up.  
 
 Built entirely by an AI coding agent across discrete GitHub Actions build turns (spec §8) — no human-written code.
+
+## Running the Project
+
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+2. **Set environment variables:**
+   Copy `.env.example` to `.env` and fill in real values:
+   ```bash
+   cp .env.example .env
+   ```
+   `.env.example` variables:
+   - `PORT=3000`
+   - `DATABASE_URL=postgres://user:password@localhost:5432/app`
+
+3. **Type-check:**
+   ```bash
+   npx tsc --noEmit
+   ```
+
+4. **Run tests:**
+   ```bash
+   npm test
+   ```
+
+5. **Start the server:**
+   ```bash
+   node index.js
+   # or with ts-node:
+   npx ts-node src/index.ts
+   ```
